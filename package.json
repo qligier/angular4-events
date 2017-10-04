@@ -1,6 +1,6 @@
 {
   "name": "angular4-events",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "Events is a publish-subscribe style event system based on sqlProvider/angular2-pubsub",
   "main": "./umd/angular4-events.js",
   "module": "./esm/src/index.js",
@@ -24,17 +24,21 @@
     "angular4-service"
   ],
   "author": {
-    "name": "Semih KEŞKEK",
-    "email": "keskeksmh@gmail.com",
-	"url": "http://github.com/sqlProvider"
+    "name": "Quentin Ligier",
+    "url": "http://github.com/qligier"
   },
   "contributors": [
+    {
+      "name": "Semih KEŞKEK",
+      "email": "keskeksmh@gmail.com",
+      "url": "http://github.com/sqlProvider"
+    },
     {
       "name": "Mert Susur",
       "email": "mail@mertsusur.com",
       "url": "http://github.com/msusur"
     },
-	{
+    {
       "name": "Dustin Cleveland",
       "url": "https://github.com/dustincleveland"
     }
