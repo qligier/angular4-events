@@ -43,7 +43,7 @@ declare class EventsService {
 }
 ```
 
-#### EventsService.publish(event: stirng, eventObject?: any): void
+#### EventsService.publish(event: string, eventObject?: any): void
 	
 Publish event to all subscriber.
 
@@ -58,7 +58,7 @@ export class OverlayComponent implements OnInit, OnDestroy {
 }
 ```
 
-#### EventsService.subscribe(event: stirng): Observable<any>
+#### EventsService.subscribe(event: string): Observable<any>
 
 Subscribe to channel. 
 
