@@ -6,7 +6,6 @@ const DedupePlugin = require('webpack/lib/optimize/DedupePlugin');
 const DefinePlugin = require('webpack/lib/DefinePlugin');
 const UglifyJsPlugin = require('webpack/lib/optimize/UglifyJsPlugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const StyleLintPlugin = require('stylelint-webpack-plugin');
 
 const ENV = process.env.NODE_ENV = 'production';
 
@@ -46,28 +45,20 @@ module.exports = {
   },
   module: {
     loaders: [
-      { test: /\.css$/, loader: 'raw', exclude: /node_modules/ },
-      { test: /\.css$/, loader: 'style!css?-minimize', exclude: /src/ },
-      { test: /\.html$/, loader: 'raw' },
-      { test: /\.ts$/, loader: 'ts', query: { compilerOptions: { noEmit: false } } }
+      { test: /\.ts$/, loader: 'ts-loader', query: { compilerOptions: { noEmit: false } } }
     ]
   },
   output: {
-    path: './dist/umd',
+    path: '/Users/qlig/git/angular4-events/dist/umd',
     filename: 'angular2-pubsub.js',
     libraryTarget: 'umd',
     library: 'angular2-pubsub'
   },
   plugins: [
-    new StyleLintPlugin({
-      syntax: 'scss',
-      context: 'scss',
-      failOnError: true
-    }),
     new CompressionPlugin({ regExp: /\.css$|\.html$|\.js$|\.map$/ })
   ],
   resolve: {
-    extensions: ['', '.ts', '.js'],
+    extensions: ['.ts', '.js'],
     modules: [path.resolve(__dirname, 'node_modules')]
   }
 };
