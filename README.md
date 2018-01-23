@@ -5,7 +5,8 @@ Events is a publish-subscribe style event system based on [sqlProvider/angular2-
 ## Usage
  - Import service in your codes or download via npm.
 
-`npm install --save angular4-events`
+   - Angular 4: `npm install --save angular4-events@4.0.1`
+   - Angular 5: `npm install --save angular4-events@latest`
 
  - Add module bundle to imports in your application.
 ```typescript
