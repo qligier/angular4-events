@@ -1,3 +1,6 @@
+## v5.0.1
+Updated dependencies for Angular 6.
+
 ## v5.0.0
 Updated for Angular 5.
 
