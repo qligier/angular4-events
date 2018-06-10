@@ -1,10 +1,10 @@
 const path = require('path');
 // Webpack and its plugins
-const CommonsChunkPlugin = require('webpack/lib/optimize/CommonsChunkPlugin');
+//const CommonsChunkPlugin = require('webpack/lib/optimize/CommonsChunkPlugin');
 const CompressionPlugin = require('compression-webpack-plugin');
-const DedupePlugin = require('webpack/lib/optimize/DedupePlugin');
+//const DedupePlugin = require('webpack/lib/optimize/DedupePlugin');
 const DefinePlugin = require('webpack/lib/DefinePlugin');
-const UglifyJsPlugin = require('webpack/lib/optimize/UglifyJsPlugin');
+//const UglifyJsPlugin = require('webpack/lib/optimize/UglifyJsPlugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const ENV = process.env.NODE_ENV = 'production';
@@ -13,6 +13,7 @@ const metadata = {
   env: ENV
 };
 module.exports = {
+  mode: 'production',
   devtool: 'source-map',
   entry: {
     'main': './src/index.ts'
@@ -44,7 +45,7 @@ module.exports = {
     }
   },
   module: {
-    loaders: [
+    rules: [
       { test: /\.ts$/, loader: 'ts-loader', query: { compilerOptions: { noEmit: false } } }
     ]
   },
