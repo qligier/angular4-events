@@ -5,7 +5,6 @@ const CompressionPlugin = require('compression-webpack-plugin');
 //const DedupePlugin = require('webpack/lib/optimize/DedupePlugin');
 const DefinePlugin = require('webpack/lib/DefinePlugin');
 //const UglifyJsPlugin = require('webpack/lib/optimize/UglifyJsPlugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const ENV = process.env.NODE_ENV = 'production';
 
@@ -13,7 +12,6 @@ const metadata = {
   env: ENV
 };
 module.exports = {
-  mode: 'production',
   devtool: 'source-map',
   entry: {
     'main': './src/index.ts'
@@ -50,13 +48,13 @@ module.exports = {
     ]
   },
   output: {
-    path: '/Users/qlig/git/angular4-events/dist/umd',
-    filename: 'angular2-pubsub.js',
+    path: path.resolve('dist/umd'),
+    filename: 'angular4-events.js',
     libraryTarget: 'umd',
-    library: 'angular2-pubsub'
+    library: 'angular4-events'
   },
   plugins: [
-    new CompressionPlugin({ regExp: /\.css$|\.html$|\.js$|\.map$/ })
+    new CompressionPlugin({ test: /\.css$|\.html$|\.js$|\.map$/ })
   ],
   resolve: {
     extensions: ['.ts', '.js'],

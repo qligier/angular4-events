@@ -12,17 +12,16 @@ const metadata = {
 };
 
 module.exports = {
-    debug: true,
     devtool: 'inline-source-map',
     module: {
-        loaders: [
-            { test: /\.ts$/, loader: 'ts', query: { compilerOptions: { noEmit: false } } }
+        rules: [
+            { test: /\.ts$/, loader: 'ts-loader', query: { compilerOptions: { noEmit: false } } }
         ]
     },
     plugins: [
         new DefinePlugin({ 'webpack': { 'ENV': JSON.stringify(metadata.env) } })
     ],
     resolve: {
-        extensions: ['', '.ts', '.js']
+        extensions: ['.ts', '.js']
     }
 };
