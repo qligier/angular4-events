@@ -1,3 +1,6 @@
+## v8.0.0
+Removed unused dependencies and upgraded other dependencies. Bump to Angular 8 :tada: 
+
 ## v5.0.2
 Fixed Angular version mismatch when adding this dependency with yarn.
 
