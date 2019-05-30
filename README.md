@@ -1,6 +1,6 @@
 # Events Service for Angular 4
 
-Events is a publish-subscribe style event system based on [sqlProvider/angular2-pubsub](https://github.com/sqlProvider/angular2-pubsub/tree/Angular-v4.0.0) and modified to be similar to ionic-angular/Events.
+Events is a publish-subscribe style event system based on [sqlProvider/angular2-pubsub](https://github.com/sqlProvider/angular2-pubsub) and modified to be similar to ionic-angular/Events.
 
 ## Usage
  - Import service in your codes or download via npm.
