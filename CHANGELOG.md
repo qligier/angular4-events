@@ -1,3 +1,6 @@
+## v5.0.2
+Fixed Angular version mismatch when adding this dependency with yarn.
+
 ## v5.0.1
 Updated dependencies for Angular 6.
 
