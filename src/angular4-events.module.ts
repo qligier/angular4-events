@@ -7,7 +7,7 @@ import { ModuleWithProviders, NgModule } from '@angular/core';
     ]
 })
 export class EventsModule {
-    public static forRoot(): ModuleWithProviders {
+    public static forRoot(): ModuleWithProviders<EventsModule> {
         return {
             ngModule: EventsModule,
             providers: [
