@@ -15,7 +15,7 @@ module.exports = {
     devtool: 'inline-source-map',
     module: {
         rules: [
-            { test: /\.ts$/, loader: 'ts-loader', query: { compilerOptions: { noEmit: false } } }
+            { test: /\.ts$/, loader: 'ts-loader', exclude: /node_modules/ }
         ]
     },
     plugins: [
