@@ -1,6 +1,6 @@
 {
   "name": "angular4-events",
-  "version": "8.0.0",
+  "version": "10.0.0",
   "description": "Events is a publish-subscribe style event system based on sqlProvider/angular2-pubsub",
   "main": "./umd/angular4-events.js",
   "module": "./esm/src/index.js",
@@ -22,6 +22,7 @@
     "Angular5",
     "Angular6",
     "Angular8",
+    "Angular10",
     "pubsub",
     "events",
     "angular4-service"
@@ -65,6 +66,7 @@
     "@angular/core": "~10.0.0",
     "@angular/platform-browser": "~10.0.0",
     "jasmine-core": "~3.6.0",
+    "js-yaml": "^3.13.1",
     "rxjs": "~6.6.0",
     "ts-helpers": "^1.1.2",
     "zone.js": "~0.10.3"
@@ -94,6 +96,7 @@
     "typescript": "^3.9.4",
     "validate-commit-msg": "^2.14.0",
     "webpack": "^5.24.2",
+    "webpack-cli": "^4.5.0",
     "webpack-dev-server": "^3.11.2",
     "webpack-fix-default-import-plugin": "^1.0.3"
   }

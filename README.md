@@ -1,4 +1,4 @@
-# Events Service for Angular 4
+# Events Service for Angular
 
 Events is a publish-subscribe style event system based on [sqlProvider/angular2-pubsub](https://github.com/sqlProvider/angular2-pubsub) and modified to be similar to ionic-angular/Events.
 
@@ -9,6 +9,7 @@ Events is a publish-subscribe style event system based on [sqlProvider/angular2-
    - Angular 5: `npm install --save angular4-events@5.0.0`
    - Angular 6: `npm install --save angular4-events@5.0.2`
    - Angular 8: `npm install --save angular4-events@8.0.0`
+   - Angular 10: `npm install --save angular4-events@10.0.0`
    - :warning: Version 5.0.1 is incompatible with Angular 5 and should have been version 6.0.0.
 
  - Add module bundle to imports in your application.
