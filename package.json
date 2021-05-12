@@ -53,24 +53,19 @@
   },
   "homepage": "https://github.com/qligier/angular4-events#readme",
   "peerDependencies": {
-    "@angular/common": "~10.0.0",
-    "@angular/compiler": "~10.0.0",
-    "@angular/core": "~10.0.0",
-    "@angular/forms": "~10.0.0",
-    "@angular/platform-browser": "~10.0.0",
+    "@angular/forms": "~11.2.13",
     "rxjs": "~6.6.0"
   },
   "dependencies": {
-    "@angular/common": "~10.0.0",
-    "@angular/compiler": "~10.0.0",
-    "@angular/core": "~10.0.0",
-    "@angular/platform-browser": "~10.0.0",
-    "rxjs": "~6.6.0",
-    "zone.js": "~0.10.3"
+    "@angular/common": "~11.2.13",
+    "@angular/compiler": "~11.2.13",
+    "@angular/core": "~11.2.13",
+    "@angular/platform-browser": "~11.2.13",
+    "rxjs": "~6.6.0"
   },
   "devDependencies": {
-    "@angular/compiler-cli": "~10.0.0",
-    "@angular/platform-browser-dynamic": "~10.0.0",
+    "@angular/compiler-cli": "~11.2.13",
+    "@angular/platform-browser-dynamic": "~11.2.13",
     "@types/es6-shim": "^0.31.41",
     "@types/jasmine": "3.7",
     "@types/node": "^15.0",
@@ -82,8 +77,7 @@
     "karma-sourcemap-loader": "^0.3.8",
     "karma-webpack": "^5.0.0",
     "ts-loader": "9.1",
-    "tslint": "^6.1.3",
-    "typescript": "^3.9.4",
+    "typescript": "^4.1.5",
     "webpack": "5.37",
     "webpack-cli": "4.7",
     "webpack-dev-server": "^3.11.2",
