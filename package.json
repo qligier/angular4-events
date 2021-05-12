@@ -1,6 +1,6 @@
 {
   "name": "angular4-events",
-  "version": "10.0.0",
+  "version": "10.0.1",
   "description": "Events is a publish-subscribe style event system based on sqlProvider/angular2-pubsub",
   "main": "./umd/angular4-events.js",
   "module": "./esm/src/index.js",

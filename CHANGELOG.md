@@ -1,3 +1,6 @@
+## v10.0.1
+Removed unused dependencies and upgraded other dependencies.
+
 ## v10.0.0
 Upgraded dependencies and bump to Angular 10 :tada: 
 
